@@ -1,0 +1,6 @@
+framework module MockPrinterLibs {
+  umbrella header "MockPrinterLibs.h"
+
+  export *
+  module * { export * }
+}

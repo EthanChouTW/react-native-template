@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="notification_merchant_auto_cancelled">オーダー #%1$s-%2$s は %3$s 分以内に承認されなかったため、自動的にキャンセルされました。</string>
+  <string name="notification_merchant_cancelled_order">注文番号 #%1$s はキャンセルされます</string>
+  <string name="notification_merchant_new_order">新しいオーダー #%1$s-%2$s があります!</string>
+  <string name="title_enable_bluetooth">Bluetoothを有効化</string>
+  <string name="msg_enable_bluetooth">bluetoothを有効にしてデバイスとペアリングしてください</string>
+  <string name="lbl_ok">OK</string>
+</resources>

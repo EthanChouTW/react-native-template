@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="notification_merchant_auto_cancelled">你的訂單 #%1$s-%2$s 已被自動取消, 因為你沒有在 %3$s 分鐘內接受訂單</string>
+  <string name="notification_merchant_cancelled_order">您的訂單 #%1$s 已被取消</string>
+  <string name="notification_merchant_new_order">你有一張新訂單 #%1$s-%2$s!</string>
+  <string name="title_enable_bluetooth">啟用藍牙</string>
+  <string name="msg_enable_bluetooth">請啟用您的藍牙功能並與您的裝置配對。</string>
+  <string name="lbl_ok">Okay</string>
+</resources>

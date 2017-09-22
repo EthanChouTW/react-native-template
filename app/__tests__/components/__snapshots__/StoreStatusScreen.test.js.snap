@@ -1,0 +1,2165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreStatusSreen renders correctly 1`] = `
+<>
+  <>
+    <
+      style={
+        Object {
+          "backgroundColor": "#FDDA3B",
+          "height": 20,
+        }
+      }
+    />
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FDDA3B",
+          "flexDirection": "row",
+          "padding": 8,
+          "paddingLeft": 12,
+        }
+      }
+    >
+      <
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <
+          accessible={true}
+          allowFontScaling={false}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 24,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+        >
+          
+        </>
+      </>
+      <
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 20,
+            "marginTop": -4,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        title_store_status
+      </>
+      <
+        style={
+          Object {
+            "flexDirection": "row",
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      />
+    </>
+  </>
+  <
+    style={
+      Object {
+        "padding": 16,
+      }
+    }
+  >
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "borderColor": "#FF8A0A",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "color": "#FF8A0A",
+          "padding": 16,
+        }
+      }
+    >
+      msg_close_store
+    </>
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 30,
+        }
+      }
+    >
+      <>
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 16,
+            }
+          }
+        >
+          lbl_store_open
+        </>
+      </>
+      <RCTSwitch
+        disabled={false}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onValueChange={[Function]}
+        style={
+          Array [
+            Object {
+              "height": 31,
+              "width": 51,
+            },
+            undefined,
+          ]
+        }
+        value={true}
+      />
+    </>
+  </>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    transparent={true}
+    visible={false}
+  >
+    <
+      style={
+        Object {
+          "backgroundColor": "#00000080",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <
+        style={
+          Object {
+            "backgroundColor": "white",
+            "marginHorizontal": 40,
+            "padding": 24,
+          }
+        }
+      >
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000000D4",
+              "fontSize": 20,
+              "marginBottom": 16,
+            }
+          }
+        >
+          close_store_dialog_title
+        </>
+        <
+          style={
+            Object {
+              "marginLeft": -8,
+            }
+          }
+        >
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  Object {
+                    "backgroundColor": null,
+                  },
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#07c748",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "backgroundColor": "#07c748",
+                      "borderRadius": 5,
+                      "height": 10,
+                      "width": 10,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_minutes
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_hours
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  today
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  Object {
+                    "alignItems": "center",
+                    "marginTop": -10,
+                  },
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#07c748",
+                      "flexDirection": "row",
+                      "marginLeft": 8.5,
+                      "marginRight": 10,
+                    }
+                  }
+                >
+                  <
+                    keyboardType="numeric"
+                    maxLength={1}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      Object {
+                        "color": "black",
+                        "fontSize": 16,
+                        "height": 40,
+                        "width": "100%",
+                      }
+                    }
+                    underlineColorAndroid="#07c748"
+                    value="2"
+                  />
+                  <
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "bottom": 10,
+                        "color": "#757575",
+                        "fontSize": 16,
+                        "position": "absolute",
+                        "right": 0,
+                      }
+                    }
+                  >
+                    days
+                  </>
+                </>
+              </>
+            </>
+          </>
+        </>
+        <
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#07c748",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "marginLeft": 20,
+                  "marginTop": 8,
+                }
+              }
+            >
+              lbl_cancel
+            </>
+          </>
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#07c748",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "marginLeft": 20,
+                    "marginTop": 8,
+                  },
+                  false,
+                ]
+              }
+            >
+              lbl_save
+            </>
+          </>
+        </>
+      </>
+    </>
+  </Modal>
+</>
+`;
+
+exports[`StoreStatusSreen renders correctly 2`] = `
+<>
+  <>
+    <
+      style={
+        Object {
+          "backgroundColor": "#FDDA3B",
+          "height": 20,
+        }
+      }
+    />
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FDDA3B",
+          "flexDirection": "row",
+          "padding": 8,
+          "paddingLeft": 12,
+        }
+      }
+    >
+      <
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <
+          accessible={true}
+          allowFontScaling={false}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 24,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+        >
+          
+        </>
+      </>
+      <
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 20,
+            "marginTop": -4,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        title_store_status
+      </>
+      <
+        style={
+          Object {
+            "flexDirection": "row",
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      />
+    </>
+  </>
+  <
+    style={
+      Object {
+        "padding": 16,
+      }
+    }
+  >
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "borderColor": "#FF8A0A",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "color": "#FF8A0A",
+          "padding": 16,
+        }
+      }
+    >
+      msg_close_store
+    </>
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 30,
+        }
+      }
+    >
+      <>
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 16,
+            }
+          }
+        >
+          lbl_store_closed
+        </>
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#757575",
+              "fontSize": 14,
+            }
+          }
+        >
+          close_store_until_date
+        </>
+      </>
+      <RCTSwitch
+        disabled={true}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onValueChange={[Function]}
+        style={
+          Array [
+            Object {
+              "height": 31,
+              "width": 51,
+            },
+            undefined,
+          ]
+        }
+        value={false}
+      />
+    </>
+  </>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    transparent={true}
+    visible={false}
+  >
+    <
+      style={
+        Object {
+          "backgroundColor": "#00000080",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <
+        style={
+          Object {
+            "backgroundColor": "white",
+            "marginHorizontal": 40,
+            "padding": 24,
+          }
+        }
+      >
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000000D4",
+              "fontSize": 20,
+              "marginBottom": 16,
+            }
+          }
+        >
+          close_store_dialog_title
+        </>
+        <
+          style={
+            Object {
+              "marginLeft": -8,
+            }
+          }
+        >
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  Object {
+                    "backgroundColor": null,
+                  },
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#07c748",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "backgroundColor": "#07c748",
+                      "borderRadius": 5,
+                      "height": 10,
+                      "width": 10,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_minutes
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_hours
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  today
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  Object {
+                    "alignItems": "center",
+                    "marginTop": -10,
+                  },
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#07c748",
+                      "flexDirection": "row",
+                      "marginLeft": 8.5,
+                      "marginRight": 10,
+                    }
+                  }
+                >
+                  <
+                    keyboardType="numeric"
+                    maxLength={1}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      Object {
+                        "color": "black",
+                        "fontSize": 16,
+                        "height": 40,
+                        "width": "100%",
+                      }
+                    }
+                    underlineColorAndroid="#07c748"
+                    value="2"
+                  />
+                  <
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "bottom": 10,
+                        "color": "#757575",
+                        "fontSize": 16,
+                        "position": "absolute",
+                        "right": 0,
+                      }
+                    }
+                  >
+                    days
+                  </>
+                </>
+              </>
+            </>
+          </>
+        </>
+        <
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#07c748",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "marginLeft": 20,
+                  "marginTop": 8,
+                }
+              }
+            >
+              lbl_cancel
+            </>
+          </>
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#07c748",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "marginLeft": 20,
+                    "marginTop": 8,
+                  },
+                  false,
+                ]
+              }
+            >
+              lbl_save
+            </>
+          </>
+        </>
+      </>
+    </>
+  </Modal>
+</>
+`;
+
+exports[`StoreStatusSreen renders correctly 3`] = `
+<>
+  <>
+    <
+      style={
+        Object {
+          "backgroundColor": "#FDDA3B",
+          "height": 20,
+        }
+      }
+    />
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FDDA3B",
+          "flexDirection": "row",
+          "padding": 8,
+          "paddingLeft": 12,
+        }
+      }
+    >
+      <
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <
+          accessible={true}
+          allowFontScaling={false}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontSize": 24,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+        >
+          
+        </>
+      </>
+      <
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 20,
+            "marginTop": -4,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        title_store_status
+      </>
+      <
+        style={
+          Object {
+            "flexDirection": "row",
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      />
+    </>
+  </>
+  <
+    style={
+      Object {
+        "padding": 16,
+      }
+    }
+  >
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "borderColor": "#FF8A0A",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "color": "#FF8A0A",
+          "padding": 16,
+        }
+      }
+    >
+      msg_close_store
+    </>
+    <
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 30,
+        }
+      }
+    >
+      <>
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "black",
+              "fontSize": 16,
+            }
+          }
+        >
+          lbl_store_closed
+        </>
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#757575",
+              "fontSize": 14,
+            }
+          }
+        >
+          close_store_until_date
+        </>
+      </>
+      <RCTSwitch
+        disabled={false}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onValueChange={[Function]}
+        style={
+          Array [
+            Object {
+              "height": 31,
+              "width": 51,
+            },
+            undefined,
+          ]
+        }
+        value={false}
+      />
+    </>
+  </>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    transparent={true}
+    visible={false}
+  >
+    <
+      style={
+        Object {
+          "backgroundColor": "#00000080",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <
+        style={
+          Object {
+            "backgroundColor": "white",
+            "marginHorizontal": 40,
+            "padding": 24,
+          }
+        }
+      >
+        <
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "#000000D4",
+              "fontSize": 20,
+              "marginBottom": 16,
+            }
+          }
+        >
+          close_store_dialog_title
+        </>
+        <
+          style={
+            Object {
+              "marginLeft": -8,
+            }
+          }
+        >
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  Object {
+                    "backgroundColor": null,
+                  },
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#07c748",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "backgroundColor": "#07c748",
+                      "borderRadius": 5,
+                      "height": 10,
+                      "width": 10,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_minutes
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  close_store_duration_hours
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  undefined,
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  accessible={true}
+                  allowFontScaling={true}
+                  disabled={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                      "fontSize": 16,
+                      "paddingLeft": 12,
+                    }
+                  }
+                >
+                  today
+                </>
+              </>
+            </>
+          </>
+          <
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                    "flexGrow": 1,
+                    "padding": 10,
+                  },
+                  Object {
+                    "alignItems": "center",
+                    "marginTop": -10,
+                  },
+                  null,
+                ]
+              }
+              testID={undefined}
+            >
+              <
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    },
+                  ]
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "borderColor": "#757575",
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 20,
+                      "width": 20,
+                    }
+                  }
+                />
+              </>
+              <
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "marginLeft": 5,
+                  }
+                }
+              >
+                <
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#07c748",
+                      "flexDirection": "row",
+                      "marginLeft": 8.5,
+                      "marginRight": 10,
+                    }
+                  }
+                >
+                  <
+                    keyboardType="numeric"
+                    maxLength={1}
+                    onChangeText={[Function]}
+                    onFocus={[Function]}
+                    style={
+                      Object {
+                        "color": "black",
+                        "fontSize": 16,
+                        "height": 40,
+                        "width": "100%",
+                      }
+                    }
+                    underlineColorAndroid="#07c748"
+                    value="2"
+                  />
+                  <
+                    accessible={true}
+                    allowFontScaling={true}
+                    disabled={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "bottom": 10,
+                        "color": "#757575",
+                        "fontSize": 16,
+                        "position": "absolute",
+                        "right": 0,
+                      }
+                    }
+                  >
+                    days
+                  </>
+                </>
+              </>
+            </>
+          </>
+        </>
+        <
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#07c748",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "marginLeft": 20,
+                  "marginTop": 8,
+                }
+              }
+            >
+              lbl_cancel
+            </>
+          </>
+          <
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#07c748",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "marginLeft": 20,
+                    "marginTop": 8,
+                  },
+                  false,
+                ]
+              }
+            >
+              lbl_save
+            </>
+          </>
+        </>
+      </>
+    </>
+  </Modal>
+</>
+`;

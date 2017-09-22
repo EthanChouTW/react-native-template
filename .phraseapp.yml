@@ -1,0 +1,26 @@
+phraseapp:
+  file_format: simple_json
+  project_id: 63f2ac8d9df5d66399808ff617c0e12e
+  pull:
+    targets:
+    - file: ./app/locales/en.json
+      params:
+        locale_id: 89c4f9231044cfd2eaa6ebcb6f24e022
+    - file: ./app/locales/zh.json
+      params:
+        locale_id: 2b2ab7ebe940efca79b2f848e330f848
+    - file: ./app/locales/zh-TW.json
+      params:
+        locale_id: 1ac950a7d3afab799790950ec6bb4deb
+    - file: ./app/locales/ja.json
+      params:
+        locale_id: dc1639c25737c159be2e1c8321b87706
+    - file: ./app/locales/id.json
+      params:
+        locale_id: 791fae0e45f11abb9d65b67d3769e73e
+    - file: ./app/locales/th.json
+      params:
+        locale_id: 1bf92012c9d5468fbea0cd686482ffa6
+    - file: ./app/locales/zh-HK.json
+      params:
+        locale_id: 93cd42a13b6e9fac546ddbd3609fc03e

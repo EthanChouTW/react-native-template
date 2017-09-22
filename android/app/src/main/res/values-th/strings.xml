@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="notification_merchant_auto_cancelled">คำสั่งซื้อ #%1$s-%2$s ของคุณถูกยกเลิกโดยอัตโนมัติ เนื่องจากคุณไม่ตอบรับภายใน %3$s นาที</string>
+  <string name="notification_merchant_cancelled_order">คำสั่งซื้อ #%1$s ของคุณถูกยกเลิกแล้ว</string>
+  <string name="notification_merchant_new_order">คุณมีคำสั่งซื้อใหม่ #%1$s-%2$s กำลังเข้ามา!</string>
+  <string name="title_enable_bluetooth">เปิดใช้งานบลูทูธ</string>
+  <string name="msg_enable_bluetooth">โปรดเปิดใช้งานบลูทูธของคุณและ/หรือจับคู่กับอุปกรณ์ของคุณ</string>
+  <string name="lbl_ok">ตกลง</string>
+</resources>

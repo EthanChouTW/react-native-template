@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfileMenuComponent renders correctly 1`] = `
+<
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "padding": 10,
+      },
+      Object {
+        "backgroundColor": "#fff",
+      },
+    ]
+  }
+>
+  <
+    source={
+      Object {
+        "uri": "https://assets-staging.honestbee.com/avatars/default/default_avatar.png",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 40,
+        "height": 80,
+        "width": 80,
+      }
+    }
+  />
+  <
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingLeft": 16,
+      }
+    }
+  >
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 20,
+        }
+      }
+    >
+      Chou Ethan
+    </>
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#A5A7AA",
+          "fontSize": 16,
+        }
+      }
+    >
+      ethan.chou@honestbee.com
+    </>
+  </>
+</>
+`;
+
+exports[`UserProfileMenuComponent renders correctly 2`] = `
+<
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+      "padding": 10,
+    }
+  }
+>
+  <
+    source={
+      Object {
+        "uri": "https://assets-staging.honestbee.com/avatars/default/default_avatar.png",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 25,
+        "height": 50,
+        "width": 50,
+      }
+    }
+  />
+  <
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingLeft": 16,
+      }
+    }
+  >
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 16,
+        }
+      }
+    >
+      Chou Ethan
+    </>
+    <
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 14,
+        }
+      }
+    >
+      ethan.chou@honestbee.com
+    </>
+  </>
+</>
+`;

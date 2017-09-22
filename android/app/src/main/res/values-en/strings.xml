@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="notification_merchant_auto_cancelled">Your order #%1$s-%2$s was automatically cancelled because you did not accept within %3$s mins.</string>
+    <string name="notification_merchant_cancelled_order">Order #%1$s is cancelled</string>
+    <string name="notification_merchant_new_order">You have new order #%1$s-%2$s incoming!</string>
+    <string name="title_enable_bluetooth">Enable Bluetooth</string>
+    <string name="msg_enable_bluetooth">Please enable and your bluetooth and/or pair with your device.</string>
+    <string name="lbl_ok">OK</string>
+</resources>

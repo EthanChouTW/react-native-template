@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="notification_merchant_auto_cancelled">Pesanan Anda #%1$s-%2$s dibatalkan otomatis karena Anda tidak menerimanya dalam %3$s menit.</string>
+    <string name="notification_merchant_cancelled_order">Pesanan #%1$s dibatalkan</string>
+    <string name="notification_merchant_new_order">Datang pesanan baru #%1$s-%2$s untuk Anda!</string>
+    <string name="title_enable_bluetooth">Aktifkan Bluetooth</string>
+    <string name="msg_enable_bluetooth">Mohon aktifkan bluetooth Anda dan/atau sandingkan dengan perangkat Anda.</string>
+    <string name="lbl_ok">Oke</string>
+</resources>
