@@ -15,8 +15,8 @@ describe('UserProfileMenuComponent', () => {
       routeName: 'Home'
     },
     {
-      key: 'InventoryManagementScreen',
-      routeName: 'InventoryManagementScreen'
+      key: 'BodyScreen',
+      routeName: 'BodyScreen'
     },
     {
       key: 'JobHistory',

@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Platform, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import {
+  ImageBackground,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity
+} from 'react-native';
 import Theme from '../utils/styleCollection';
 import StatusBarBackground from './StatusBarBackground';
 
 const styles = StyleSheet.create({
   topBar: {
     flexDirection: 'row',
-    backgroundColor: Theme.hbYellow,
+    backgroundColor: '#6FDACF',
     alignItems: 'center',
     ...Platform.select({
       ios: {
@@ -20,9 +27,14 @@ const styles = StyleSheet.create({
       }
     })
   },
+  imageBackground: {
+    width: 100,
+    height: 30,
+    resizeMode: 'repeat'
+  },
   title: {
     marginTop: -4,
-    color: 'black',
+    color: 'white',
     fontSize: 20,
     paddingLeft: 16
   },
@@ -41,7 +53,7 @@ const NavigationBar = props => (
         <Icon
           name={props.iconName === undefined ? 'close' : props.iconName}
           size={24}
-          color="black"
+          color="white"
         />
       </TouchableOpacity>
 
@@ -56,7 +68,10 @@ NavigationBar.propTypes = {
   onIconPress: PropTypes.func,
   title: PropTypes.string,
   iconName: PropTypes.string,
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.object])
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.object
+  ])
 };
 
 NavigationBar.defaultProps = {

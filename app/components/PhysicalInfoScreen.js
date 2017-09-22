@@ -11,9 +11,10 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import NavigationBar from '../NavigationBar';
-import Locales from '../../locales';
-import Theme from '../../utils/styleCollection';
+import NavigationBar from './NavigationBar';
+import DrawerItemComponent from './DrawerItemComponent';
+import Locales from '../locales';
+import Theme from '../utils/styleCollection';
 
 const styles = StyleSheet.create({
   container: {
@@ -34,9 +35,9 @@ const mapDispatchToProps = {
 };
 
 @connect(mapStateToProps, mapDispatchToProps)
-export default class InventoryManagementScreen extends Component {
+export default class PhysicalInfoScreen extends Component {
   static navigationOptions = {
-    drawerLabel: Locales.t('ab_title_inventory_management')
+    drawerLabel: (<DrawerItemComponent title={'生理資料'}/>)
   };
   static propTypes = {
   };
@@ -49,7 +50,7 @@ export default class InventoryManagementScreen extends Component {
   }
 
   onInitializeState = () => {
-  d
+
   };
 
   render() {

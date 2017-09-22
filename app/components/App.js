@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import codePush from 'react-native-code-push';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { View, StatusBar } from 'react-native';
@@ -12,7 +11,7 @@ const MainView = props => {
     return null;
   }
   if (props.beeId !== undefined) {
-    return <Main />;
+    return <Main/>;
   }
   return <Login />;
 };
@@ -25,7 +24,6 @@ MainView.propTypes = {
 const mapStateToProps = state => ({ auth: state.auth });
 
 @connect(mapStateToProps)
-@codePush
 export default class App extends PureComponent {
   static propTypes = {
     auth: PropTypes.shape({
@@ -33,13 +31,6 @@ export default class App extends PureComponent {
       isReduxStoreReady: PropTypes.bool
     })
   };
-
-  componentDidMount() {
-    codePush.sync({
-      updateDialog: true,
-      installMode: codePush.InstallMode.IMMEDIATE
-    });
-  }
 
   render() {
     const { beeId, isReduxStoreReady } = this.props.auth;

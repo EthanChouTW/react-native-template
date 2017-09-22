@@ -1,19 +1,9 @@
-# React-Native Merchant App
-
-![master branch](https://img.shields.io/badge/master-:-blue.svg?style=social)
-![Build Status](https://travis-ci.com/honestbee/HB-Merchant-App.svg?token=4uPQMu1iMK3pTcTA1QVA&branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/honestbee/HB-Merchant-App/badge.svg?branch=master&t=JMUhpn)](https://coveralls.io/github/honestbee/HB-Merchant-App?branch=master)
-
-![develop branch](https://img.shields.io/badge/develop-:-blue.svg?style=social)
-![Build Status](https://travis-ci.com/honestbee/HB-Merchant-App.svg?token=4uPQMu1iMK3pTcTA1QVA&branch=develop)
-[![Coverage Status](https://coveralls.io/repos/github/honestbee/HB-Merchant-App/badge.svg?branch=develop&t=JMUhpn)](https://coveralls.io/github/honestbee/HB-Merchant-App?branch=develop)
-
 ## What is this repository for?
 
 * ヽ( ° ▽°)ノ
 
 ## How do I get set up?
-* go to Merchant App Project folder
+* go to Project folder
 * $brew install node
 * $brew install watchman
 * $brew update && brew cask install react-native-debugger

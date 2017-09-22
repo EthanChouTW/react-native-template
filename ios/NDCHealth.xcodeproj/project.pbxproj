@@ -66,7 +66,6 @@
 		B613E8B481B74D54B1AD9CF7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAE12D88056245B0A55D9F9E /* FontAwesome.ttf */; };
 		C01AE8F64EDC415F87813AAA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC66D3A85F24F18A34A14CD /* Foundation.ttf */; };
 		C19D95AFC061429EA7ACECB0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B9E7AC8F411FB334DC8C /* Octicons.ttf */; };
-		D70F24B366E54E0D85EE09ED /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0A57C5DFC0410D843D547D /* libBugsnagReactNative.a */; };
 		DBC5DB7BDABDD821E7A7C5ED /* libPods-NDCHealth-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5BD1924D87E04777EDCCAD /* libPods-NDCHealth-tvOS.a */; };
 		F3BCB24EBCB7D57B631F4472 /* libPods-NDCHealth-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C78F5BF9E64E47C672711C /* libPods-NDCHealth-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -113,13 +112,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = NDCHealth;
-		};
-		0B10BCFD1F6F7B9100B0BE35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFFB417697F545109D620572 /* BugsnagReactNative.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8AD256131D6DE5F600C7D842;
-			remoteInfo = BugsnagReactNative;
 		};
 		0B1BA8251F39EA29008C3D3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -425,7 +417,6 @@
 		9D008423D1494DAE8B970FCD /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D3DE2EEB4440E0157DC6290 /* Pods-NDCHealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCHealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NDCHealthTests/Pods-NDCHealthTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB5189B0A40A45F3A3D12C60 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
-		AFFB417697F545109D620572 /* BugsnagReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BugsnagReactNative.xcodeproj; path = "../node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.xcodeproj"; sourceTree = "<group>"; };
 		B01B93DE52A686D7A0F40E35 /* Pods-NDCHealth-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCHealth-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NDCHealth-tvOSTests/Pods-NDCHealth-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B1C78F5BF9E64E47C672711C /* libPods-NDCHealth-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NDCHealth-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB018E0DF54A76851D2BBF /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -483,7 +474,6 @@
 				798BE4522B2141D2A16BCA8F /* libRNKeychain.a in Frameworks */,
 				1E519D4404A34A8182EF4D6F /* libRNVectorIcons.a in Frameworks */,
 				B5BE3621C8FB57FFA2F901BE /* libPods-NDCHealth.a in Frameworks */,
-				D70F24B366E54E0D85EE09ED /* libBugsnagReactNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,14 +561,6 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0B10BCFA1F6F7B9100B0BE35 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0B10BCFE1F6F7B9100B0BE35 /* libBugsnagReactNative.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0B1BA8211F39EA29008C3D3B /* Products */ = {
@@ -736,7 +718,6 @@
 				5DE9B984A9A544F9A45A9146 /* RNI18n.xcodeproj */,
 				C1B4584FAE0E44299A598116 /* RNKeychain.xcodeproj */,
 				C507EB4A24FB4E0CA5C4FFAA /* RNVectorIcons.xcodeproj */,
-				AFFB417697F545109D620572 /* BugsnagReactNative.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -966,10 +947,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0B10BCFA1F6F7B9100B0BE35 /* Products */;
-					ProjectRef = AFFB417697F545109D620572 /* BugsnagReactNative.xcodeproj */;
-				},
-				{
 					ProductGroup = 0B1BA8211F39EA29008C3D3B /* Products */;
 					ProjectRef = C608ACAD278C4D44993FD1CA /* CodePush.xcodeproj */;
 				},
@@ -1078,13 +1055,6 @@
 			fileType = archive.ar;
 			path = libRCTVibration.a;
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0B10BCFE1F6F7B9100B0BE35 /* libBugsnagReactNative.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBugsnagReactNative.a;
-			remoteRef = 0B10BCFD1F6F7B9100B0BE35 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		0B1BA8261F39EA29008C3D3B /* libCodePush.a */ = {
@@ -1748,7 +1718,6 @@
 					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
 				);
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1788,7 +1757,6 @@
 					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
 				);
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

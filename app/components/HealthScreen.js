@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { SectionList, StyleSheet, Text, View } from 'react-native';
 import NavigationBar from './NavigationBar';
+import DrawerItemComponent from './DrawerItemComponent';
 import { DRAWER_OPEN } from '../utils/appConstants';
 import Locales, { currencyPrice } from '../locales';
 import Theme from '../utils/styleCollection';
@@ -24,9 +25,9 @@ const mapDispatchToProps = {
 };
 
 @connect(mapStateToProps, mapDispatchToProps)
-export default class JobHistoryScreen extends Component {
+export default class HealthScreen extends Component {
   static navigationOptions = {
-    drawerLabel: Locales.t('ab_title_job_history')
+    drawerLabel: (<DrawerItemComponent title={'健康風險評估'}/>)
   };
   static propTypes = {
   };

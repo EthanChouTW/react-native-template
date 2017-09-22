@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-start',
+    backgroundColor: 'black',
     padding: 10
   },
   userInfoContainerInScreen: {
-    backgroundColor: Theme.whiteColor
+    backgroundColor: 'black'
   },
   avatar: {
     height: 50,

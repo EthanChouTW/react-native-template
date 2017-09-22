@@ -8,15 +8,10 @@
  */
 
 #import "AppDelegate.h"
-#import <CodePush/CodePush.h>
-#import <Parse/Parse.h>
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import "HBOrderNotificationBroadcaster.h"
-#import <BugsnagReactNative/BugsnagReactNative.h>
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface AppDelegate() <UIAlertViewDelegate> {
@@ -35,7 +30,6 @@ static NSString *RECEIVEING_KEY = @"";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//  [BugsnagReactNative start];
 //  [Fabric with:@[[Crashlytics class]]];
 //
 //  [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
@@ -54,12 +48,8 @@ static NSString *RECEIVEING_KEY = @"";
   
   NSURL *jsCodeLocation;
 
-  #ifdef DEBUG
      jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-  #else
-        jsCodeLocation = [CodePush bundleURL];
-  #endif
-  
+
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"NDCHealth"

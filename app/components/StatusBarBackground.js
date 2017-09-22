@@ -5,7 +5,7 @@ import Theme from '../utils/styleCollection';
 const styles = StyleSheet.create({
   statusBarBackground: {
     height: (Platform.OS === 'ios') ? 20 : 0,
-    backgroundColor: Theme.hbYellow
+    backgroundColor: 'transparent' 
   }
 });
 

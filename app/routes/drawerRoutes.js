@@ -1,25 +1,24 @@
 import SlideMenuScreen from '../components/SlideMenuScreen';
-import OrderFulfillmentList from '../components/OrderFulfillmentList';
-import InventoryManagementScreen from '../components/inventoryManagement/InventoryManagementScreen';
-import JobHistoryScreen from '../components/JobHistoryScreen';
-import UserProfileScreen from '../components/UserProfile/UserProfileScreen';
+import HomeScreen from '../components/HomeScreen';
+import BodyScreen from '../components/inventoryManagement/BodyScreen';
+import HealthScreen from '../components/HealthScreen';
+import PhysicalInfoScreen from '../components/PhysicalInfoScreen';
 import Logout from '../components/Logout';
 import Theme from '../utils/styleCollection';
 
 export const routeKeys = {
-  UserProfile: 'UserProfile',
   Home: 'Home',
-  InventoryManagement: 'InventoryManagementScreen',
-  JobHistory: 'JobHistory',
-  Logout: 'Logout'
+  HealthScreen: 'HealthScreen',
+  BodyScreen: 'BodyScreen',
+  PhysicalInfoScreen: 'PhysicalInfoScreen'
 };
 
 export const drawerConfig = {
-  drawerWidth: 300,
+  drawerWidth: 375,
   contentComponent: SlideMenuScreen,
   contentOptions: {
-    activeTintColor: Theme.hbGray,
-    inactiveTintColor: Theme.hbGray,
+    activeTintColor: 'black',
+    inactiveTintColor: 'black',
     onItemPress: route => {
       console.log(route);
     },
@@ -30,19 +29,16 @@ export const drawerConfig = {
 };
 
 export const drawerRoutes = {
-  [`${routeKeys.UserProfile}`]: {
-    screen: UserProfileScreen
-  },
   [`${routeKeys.Home}`]: {
-    screen: OrderFulfillmentList
+    screen: HomeScreen
   },
-  [`${routeKeys.InventoryManagement}`]: {
-    screen: InventoryManagementScreen
+  [`${routeKeys.PhysicalInfoScreen}`]: {
+    screen: PhysicalInfoScreen
   },
-  [`${routeKeys.JobHistory}`]: {
-    screen: JobHistoryScreen
+  [`${routeKeys.HealthScreen}`]: {
+    screen: HealthScreen
   },
-  [`${routeKeys.Logout}`]: {
-    screen: Logout
+  [`${routeKeys.BodyScreen}`]: {
+    screen: BodyScreen
   }
 };
