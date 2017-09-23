@@ -15,6 +15,7 @@ import { Button } from 'react-native-elements';
 import NavigationBar from './NavigationBar';
 import DrawerItemComponent from './DrawerItemComponent';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {RkButton} from 'react-native-ui-kitten';
 import Theme from '../utils/styleCollection';
 import { DRAWER_OPEN } from '../utils/appConstants';
 import Locales from '../locales';
