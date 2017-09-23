@@ -183,6 +183,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-linear-gradient')
     compile project(':bugsnag-react-native')
     compile project(':react-native-i18n')
     compile project(':react-native-code-push')

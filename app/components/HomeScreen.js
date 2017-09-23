@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
+  Image,
   TextInput,
   ScrollView,
   Modal,
@@ -12,10 +13,11 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { Button } from 'react-native-elements';
+import LinearGradient from 'react-native-linear-gradient';
 import NavigationBar from './NavigationBar';
 import DrawerItemComponent from './DrawerItemComponent';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {RkButton} from 'react-native-ui-kitten';
+import { RkButton } from 'react-native-ui-kitten';
 import Theme from '../utils/styleCollection';
 import { DRAWER_OPEN } from '../utils/appConstants';
 import Locales from '../locales';
@@ -48,12 +50,11 @@ const styles = StyleSheet.create({
   userInfo: {
     flex: 4,
     flexDirection: 'column',
-    alignItems: 'center',
-    
+    alignItems: 'center'
   },
   avatar: {
     flex: 8,
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   avatarImage: {
     width: 50,
@@ -73,6 +74,30 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 8,
     backgroundColor: Theme.cardBackgroundColor
+  },
+  myPoint: {
+    paddingTop: 20,
+    paddingLeft: 24,
+    backgroundColor: 'transparent',
+    color: Theme.AMYellow,
+    fontSize: 17,
+    fontWeight: 'bold',
+    flex: 1
+  },
+  pointContainer: {
+    flexDirection: 'row',
+    flex: 2
+  },
+  point: {
+    paddingLeft: 24,
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: 'white',
+    backgroundColor: 'transparent',
+    flex: 4
+  },
+  checkPointDetail: {
+    flex: 1
   },
   infoSection: {
     flex: 3
@@ -108,7 +133,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
     fontSize: 30,
-    fontWeight: "700",
+    fontWeight: '700',
     paddingBottom: 10,
     width: 100
   },
@@ -120,12 +145,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 20,
     flex: 4,
-    backgroundColor: '#56BBB5',
+    backgroundColor: '#56BBB5'
   },
   buttonTitle: {
     color: 'white',
     fontSize: 16,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   },
   viewpager: {
     flex: 1,
@@ -136,7 +161,21 @@ const styles = StyleSheet.create({
   collection: {
     flex: 8,
     backgroundColor: 'white'
-  }
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5
+  },
+  buttonText: {
+    fontSize: 18,
+    fontFamily: 'Gill Sans',
+    textAlign: 'center',
+    margin: 10,
+    color: '#ffffff',
+    backgroundColor: 'transparent',
+  },
 });
 
 const mapStateToProps = state => ({});
@@ -186,11 +225,25 @@ export default class HomeScreen extends Component {
           <View style={styles.userSection}>
             <View style={styles.userInfo}>
               <View style={styles.avatar}>
-                <View style={styles.avatarImage}/> 
+                <View style={styles.avatarImage} />
               </View>
               <Text style={styles.name}>EthanChou</Text>
             </View>
-            <View style={styles.userPointInfo}></View>
+            <LinearGradient
+              start={{x: 0.0, y: 0.0}} end={{x: 2.0, y: 1.0}}
+              locations={[0,0.5,0.6]}
+              colors={['#0DC0B0', '#47D37F', '#78E355']}
+              style={styles.userPointInfo}>
+              <TouchableOpacity style={{flex: 1}}>
+              <Text style={styles.myPoint}>我的點數</Text>
+              <View style={styles.pointContainer}>
+               <Text style={styles.point}>9,966</Text>
+               <View style={styles.checkPointDetail}>
+               <Image source={require('../../assets/image/icon_forward.png')}/>
+               </View>
+              </View>
+              </TouchableOpacity>
+            </LinearGradient>
           </View>
         </View>
         <View style={styles.infoSection}>
@@ -206,11 +259,10 @@ export default class HomeScreen extends Component {
                 maxLength={4}
                 underlineColorAndroid="rgba(0,0,0,0)"
               />
-              <TouchableOpacity
-                style={styles.weightButton}
-              >
+              <TouchableOpacity style={styles.weightButton}>
                 <Text style={styles.buttonTitle}>更新體重</Text>
               </TouchableOpacity>
+             
             </View>
             <View style={styles.viewpager} />
             <View style={styles.collection} />

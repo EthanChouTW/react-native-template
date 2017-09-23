@@ -66,6 +66,7 @@
 		B613E8B481B74D54B1AD9CF7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAE12D88056245B0A55D9F9E /* FontAwesome.ttf */; };
 		C01AE8F64EDC415F87813AAA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC66D3A85F24F18A34A14CD /* Foundation.ttf */; };
 		C19D95AFC061429EA7ACECB0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B9E7AC8F411FB334DC8C /* Octicons.ttf */; };
+		CF74D138BC1A434B83EF5A3A /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 116C0A1FFB6C433BAFEC1023 /* libBVLinearGradient.a */; };
 		DBC5DB7BDABDD821E7A7C5ED /* libPods-NDCHealth-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5BD1924D87E04777EDCCAD /* libPods-NDCHealth-tvOS.a */; };
 		F3BCB24EBCB7D57B631F4472 /* libPods-NDCHealth-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C78F5BF9E64E47C672711C /* libPods-NDCHealth-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -323,6 +324,20 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
+		693E039A1F7640D6006B8B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED580EFABEAE4A0B974F7F24 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = BVLinearGradient;
+		};
+		693E039C1F7640D6006B8B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED580EFABEAE4A0B974F7F24 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AA15081EF7F30100718508;
+			remoteInfo = "BVLinearGradient-tvOS";
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -386,6 +401,7 @@
 		0B3B20D71F6A857A00ABC769 /* MockPrinterLibs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MockPrinterLibs.framework; sourceTree = "<group>"; };
 		0B3B213F1F6AD82B00ABC769 /* HBOrderNotificationBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HBOrderNotificationBroadcaster.h; path = NDCHealth/HBOrderNotificationBroadcaster.h; sourceTree = "<group>"; };
 		0B3B21401F6AD82B00ABC769 /* HBOrderNotificationBroadcaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HBOrderNotificationBroadcaster.m; path = NDCHealth/HBOrderNotificationBroadcaster.m; sourceTree = "<group>"; };
+		116C0A1FFB6C433BAFEC1023 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NDCHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDCHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -432,6 +448,7 @@
 		DA74B9E7AC8F411FB334DC8C /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		E44FD99978B744CABDE590B0 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		EAE12D88056245B0A55D9F9E /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		ED580EFABEAE4A0B974F7F24 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		EE2F51EE9B23D1A91CCD3EFF /* Pods-NDCHealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCHealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NDCHealthTests/Pods-NDCHealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6E8609D09444F01836FE06F /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -474,6 +491,7 @@
 				798BE4522B2141D2A16BCA8F /* libRNKeychain.a in Frameworks */,
 				1E519D4404A34A8182EF4D6F /* libRNVectorIcons.a in Frameworks */,
 				B5BE3621C8FB57FFA2F901BE /* libPods-NDCHealth.a in Frameworks */,
+				CF74D138BC1A434B83EF5A3A /* libBVLinearGradient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,8 +704,18 @@
 				BF98338EB5984BC893EC1E8B /* libRNKeychain.a */,
 				C16115DDDF51461081014325 /* libRNVectorIcons.a */,
 				6D0A57C5DFC0410D843D547D /* libBugsnagReactNative.a */,
+				116C0A1FFB6C433BAFEC1023 /* libBVLinearGradient.a */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		693E03961F7640D5006B8B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				693E039B1F7640D6006B8B93 /* libBVLinearGradient.a */,
+				693E039D1F7640D6006B8B93 /* libBVLinearGradient.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -718,6 +746,7 @@
 				5DE9B984A9A544F9A45A9146 /* RNI18n.xcodeproj */,
 				C1B4584FAE0E44299A598116 /* RNKeychain.xcodeproj */,
 				C507EB4A24FB4E0CA5C4FFAA /* RNVectorIcons.xcodeproj */,
+				ED580EFABEAE4A0B974F7F24 /* BVLinearGradient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -946,6 +975,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 693E03961F7640D5006B8B93 /* Products */;
+					ProjectRef = ED580EFABEAE4A0B974F7F24 /* BVLinearGradient.xcodeproj */;
+				},
 				{
 					ProductGroup = 0B1BA8211F39EA29008C3D3B /* Products */;
 					ProjectRef = C608ACAD278C4D44993FD1CA /* CodePush.xcodeproj */;
@@ -1258,6 +1291,20 @@
 			fileType = archive.ar;
 			path = libRCTAnimation.a;
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		693E039B1F7640D6006B8B93 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 693E039A1F7640D6006B8B93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		693E039D1F7640D6006B8B93 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 693E039C1F7640D6006B8B93 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -1638,12 +1685,14 @@
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = NDCHealthTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1677,12 +1726,14 @@
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = NDCHealthTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1718,6 +1769,7 @@
 					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1757,6 +1809,7 @@
 					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1795,11 +1848,13 @@
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = "NDCHealth-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1835,11 +1890,13 @@
 					"$(SRCROOT)/../node_modules/react-native-keychain/RNKeychainManager",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = "NDCHealth-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1871,6 +1928,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NDCHealth-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1896,6 +1954,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NDCHealth-tvOSTests";
