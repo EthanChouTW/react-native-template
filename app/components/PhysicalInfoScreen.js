@@ -58,7 +58,7 @@ export default class PhysicalInfoScreen extends Component {
     return (
       <View style={styles.container}>
         <NavigationBar
-          title={Locales.t('ab_title_inventory_management')}
+          title={'生理資料'}
           iconName="menu"
           onIconPress={() => {
             navigation.navigate('DrawerOpen');

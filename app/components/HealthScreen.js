@@ -52,7 +52,7 @@ export default class HealthScreen extends Component {
     return (
       <View style={styles.container}>
         <NavigationBar
-          title={Locales.t('ab_title_job_history')}
+          title={'健康風險評估'}
           iconName="menu"
           onIconPress={this.onPressLeftBarButton}
         />

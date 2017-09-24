@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
+  NativeModules,
   ListView,
   Dimensions,
   Image,
@@ -25,6 +26,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { RkButton } from 'react-native-ui-kitten';
 import { PagerTabIndicator } from 'rn-viewpager';
 import DeviceConnectScreen from '../alerts/DeviceConnectScreen';
+import ExerciseScreen from './ExerciseScreen';
 import Theme from '../../utils/styleCollection';
 import { DRAWER_OPEN } from '../../utils/appConstants';
 import Locales from '../../locales';
@@ -164,7 +166,8 @@ const styles = StyleSheet.create({
 const mapStateToProps = state => ({});
 
 const mapDispatchToProps = {};
-
+let interval = undefined;
+let HBPrinter = undefined;
 @connect(mapStateToProps, mapDispatchToProps)
 export default class EffectiveExerciseScreen extends Component {
   static propTypes = {};
@@ -173,6 +176,7 @@ export default class EffectiveExerciseScreen extends Component {
     super(props);
     this.state = {
       isShowConnectScreen: false,
+      isShowExerciseScreen: false,
       isConnectDevice: false,
       isFinishExercise: false,
       date: '2017-08-26',
@@ -190,18 +194,75 @@ export default class EffectiveExerciseScreen extends Component {
     return;
   };
 
+  componentWillMount() {
+    HBPrinter = NativeModules.HBPrinter;
+  }
+
+  componentWillUnmount() {
+    this.handleClearInterval();
+    HBPrinter.handleDisconnect();
+    HBPrinter = undefined;
+  }
+
+  onSetInterval = () => {
+    let counter = 0;
+    interval = setInterval(() => {
+      counter++;
+      HBPrinter.handleHr();
+      HBPrinter.getHrData('enen').then(result => {
+        if (result.status === 'success') {
+          console.log('====================================');
+          console.log(result);
+          console.log('====================================');
+        }
+      });
+    }, 5000);
+  };
+
+  handleClearInterval = () => {
+    clearInterval(interval);
+  };
+
+  handleConnect = () => {
+    if (this.state.isShowConnectScreen) {
+      HBPrinter.handleConnect('enen').then(value => {
+        console.log('============');
+        console.log(value);
+        console.log('============');
+        if (value === 'connected') {
+          this.setState({
+            isConnectDevice: true
+          });
+          this.toggleConnectScreen();
+          this.toggleExerciseScreen();
+          this.onSetInterval();
+        } else {
+          this.handleConnect();
+        }
+      });
+    }
+  };
+
   onUploadEffectiveExerciseData = () => {
 
   }
 
-  toggleConnectScreen = () => {
-    this.setState({
+  toggleConnectScreen = async () => {
+    await this.setState({
       isShowConnectScreen: !this.state.isShowConnectScreen
+    });
+    this.handleConnect();
+  };
+
+  toggleExerciseScreen = () => {
+    this.setState({
+      isShowExerciseScreen: !this.state.isShowExerciseScreen
     });
   };
 
   render() {
-    const { isShowConnectScreen, isConnectDevice, isFinishExercise } = this.state;
+    const { isShowConnectScreen, isShowExerciseScreen, isConnectDevice, isFinishExercise } = this.state;
+    
     const renderTitleIndicator = () => (
       <PagerTitleIndicator
         style={styles.viewPagerIndicator}
@@ -319,8 +380,23 @@ export default class EffectiveExerciseScreen extends Component {
         >
           {isShowConnectScreen && (
             <DeviceConnectScreen
-              onDismissView={this.toggleConnectScreen}
+              onDismissView={() => {
+                this.toggleConnectScreen();
+                this.toggleExerciseScreen();
+              }}
               title={'設備連結中...'}
+            />
+          )}
+        </Modal>
+        <Modal
+          animationType={'fade'}
+          transparent
+          visible={isShowExerciseScreen}
+          onRequestClose={this.toggleExerciseScreen}
+        >
+          {isShowExerciseScreen && (
+            <ExerciseScreen
+              onDismissView={this.toggleExerciseScreen}
             />
           )}
         </Modal>

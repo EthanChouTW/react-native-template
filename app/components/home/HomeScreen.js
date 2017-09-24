@@ -362,7 +362,7 @@ export default class HomeScreen extends Component {
           </View>
         </View>
         <View style={styles.infoSection}>
-          <ScrollView contentContainerStyle={{ height: collectionSize * 6 }}>
+          <ScrollView contentContainerStyle={{ height: collectionSize * 5.7 }}>
             <View style={styles.weightCheck}>
               <Text style={styles.weightText}>今天量體重了嗎?</Text>
               <TextInput

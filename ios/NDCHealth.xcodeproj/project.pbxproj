@@ -54,6 +54,7 @@
 		693E03241F7416B6006B8B93 /* MockPrinterLibs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3B20D71F6A857A00ABC769 /* MockPrinterLibs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		693E03261F7416B9006B8B93 /* PrinterLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0D3EB11F022BD300CDE7B1 /* PrinterLibs.framework */; };
 		693E03271F7416B9006B8B93 /* PrinterLibs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0D3EB11F022BD300CDE7B1 /* PrinterLibs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		693E03E71F77D4E5006B8B93 /* blelib_dd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 693E03E51F77D4C5006B8B93 /* blelib_dd.a */; };
 		6C4BA652965744F6B10A8C2E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6E8609D09444F01836FE06F /* EvilIcons.ttf */; };
 		6E7F66F8D30FE248EDA6ABCA /* libPods-NDCHealthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA837CE2CA29B7605C285E23 /* libPods-NDCHealthTests.a */; };
 		798BE4522B2141D2A16BCA8F /* libRNKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF98338EB5984BC893EC1E8B /* libRNKeychain.a */; };
@@ -422,6 +423,8 @@
 		4994B46467C2305E8CCFF429 /* Pods-NDCHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-NDCHealth/Pods-NDCHealth.release.xcconfig"; sourceTree = "<group>"; };
 		5DE9B984A9A544F9A45A9146 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		693E03E51F77D4C5006B8B93 /* blelib_dd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = blelib_dd.a; sourceTree = "<group>"; };
+		693E03E61F77D4C5006B8B93 /* blelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blelib.h; sourceTree = "<group>"; };
 		6B44A4F3AFB5456A82AF8F42 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		6D0A57C5DFC0410D843D547D /* libBugsnagReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBugsnagReactNative.a; sourceTree = "<group>"; };
 		6E92D493EF018A37F93C0135 /* Pods-NDCHealth-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCHealth-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NDCHealth-tvOSTests/Pods-NDCHealth-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -490,6 +493,7 @@
 				B176A45AA1AD4CE69AA01C7F /* libRNI18n.a in Frameworks */,
 				798BE4522B2141D2A16BCA8F /* libRNKeychain.a in Frameworks */,
 				1E519D4404A34A8182EF4D6F /* libRNVectorIcons.a in Frameworks */,
+				693E03E71F77D4E5006B8B93 /* blelib_dd.a in Frameworks */,
 				B5BE3621C8FB57FFA2F901BE /* libPods-NDCHealth.a in Frameworks */,
 				CF74D138BC1A434B83EF5A3A /* libBVLinearGradient.a in Frameworks */,
 			);
@@ -644,6 +648,8 @@
 		13B07FAE1A68108700A75B9A /* NDCHealth */ = {
 			isa = PBXGroup;
 			children = (
+				693E03E51F77D4C5006B8B93 /* blelib_dd.a */,
+				693E03E61F77D4C5006B8B93 /* blelib.h */,
 				0B1BAA3B1F457764008C3D3B /* NDCHealth.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -939,8 +945,7 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 3YLTQ654JA;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -1667,7 +1672,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3YLTQ654JA;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -1710,9 +1716,10 @@
 			baseConfigurationReference = EE2F51EE9B23D1A91CCD3EFF /* Pods-NDCHealthTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 3YLTQ654JA;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -1774,6 +1781,10 @@
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1814,6 +1825,10 @@
 				INFOPLIST_FILE = NDCHealth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

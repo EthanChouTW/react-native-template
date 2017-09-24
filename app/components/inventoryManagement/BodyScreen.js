@@ -58,7 +58,7 @@ export default class BodyScreen extends Component {
     return (
       <View style={styles.container}>
         <NavigationBar
-          title={Locales.t('ab_title_inventory_management')}
+          title={'體適能評估'}
           iconName="menu"
           onIconPress={() => {
             navigation.navigate('DrawerOpen');

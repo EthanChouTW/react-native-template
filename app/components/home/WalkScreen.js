@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
+  NativeModules,
   ListView,
   Dimensions,
   Image,
@@ -164,16 +165,18 @@ const styles = StyleSheet.create({
 const mapStateToProps = state => ({});
 
 const mapDispatchToProps = {};
-
+let interval = undefined;
+let HBPrinter = undefined;
 @connect(mapStateToProps, mapDispatchToProps)
 export default class WalkScreen extends Component {
   static propTypes = {};
 
   constructor(props) {
     super(props);
+
     this.state = {
       isShowConnectScreen: false,
-      isConnectDevice: true,
+      isConnectDevice: false,
       date: '2017-08-26',
       totalWalk: 5678,
       totalCal: 100,
@@ -189,13 +192,69 @@ export default class WalkScreen extends Component {
     return;
   };
 
-  onUploadWalkData = () => {
-
+  componentWillMount() {
+    HBPrinter = NativeModules.HBPrinter;
   }
 
-  toggleConnectScreen = () => {
-    this.setState({
+  componentWillUnmount() {
+    this.handleClearInterval();
+    HBPrinter.handleDisconnect();
+    HBPrinter = undefined;
+  }
+
+  onUploadWalkData = () => {
+    
+  };
+
+  onSetInterval = () => {
+    let counter = 0;
+    interval = setInterval(() => {
+      counter++;
+      HBPrinter.handleStep();
+      HBPrinter.getStepData('enen').then(result => {
+        if (result.status === 'success') {
+          const { step } = result.data;
+          this.setState({
+            totalWalk: step
+          });
+        }
+      });
+    }, 5000);
+  };
+
+  handleClearInterval = () => {
+    clearInterval(interval);
+  };
+
+  handleConnect = () => {
+    if (this.state.isShowConnectScreen) {
+      HBPrinter.handleConnect('enen').then(value => {
+        console.log('============');
+        console.log(value);
+        console.log('============');
+        if (value === 'connected') {
+          this.setState({
+            isConnectDevice: true
+          });
+          this.toggleConnectScreen();
+          this.onSetInterval();
+        } else {
+          this.handleConnect();
+        }
+      });
+    }
+  };
+
+  toggleConnectScreen = async () => {
+    await this.setState({
       isShowConnectScreen: !this.state.isShowConnectScreen
+    });
+    this.handleConnect();
+  };
+
+  toggleConnectDevice = () => {
+    this.setState({
+      isConnectDevice: !this.state.isConnectDevice
     });
   };
 
@@ -289,7 +348,7 @@ export default class WalkScreen extends Component {
           title={'走路運動'}
           onIconPress={this.props.onDismissView}
         >
-          <TouchableOpacity>
+          <TouchableOpacity onPress={HBPrinter.handleDisconnect}>
             <Text style={styles.rightButtonText}>歷史紀錄</Text>
           </TouchableOpacity>
         </NavigationBar>

@@ -11,6 +11,7 @@ import {
 import Theme from '../../utils/styleCollection';
 import Locales from '../../locales';
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
