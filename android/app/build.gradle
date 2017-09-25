@@ -95,7 +95,7 @@ def enableSeparateBuildPerCPUArchitecture = false
  */
 def enableProguardInReleaseBuilds = false
 
-def packageName = "com.ndchealth"
+def packageName = "com.taxidriver"
 
 android {
     compileSdkVersion 25
@@ -119,7 +119,7 @@ android {
         resValue "string", "parse_app_id", ""
         resValue "string", "parse_client_key", ""
         resValue "string", "parse_end_point", ""
-        resValue "string", "build_config_package", "com.ndchealth"
+        resValue "string", "build_config_package", "com.taxidriver"
     }
     signingConfigs {
         release {

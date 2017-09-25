@@ -11,18 +11,12 @@ global.I18n = I18nMock;
 const viewPagerMock = jest.mock('rn-viewpager', () => {});
 global.ViewPager = viewPagerMock;
 
-const NativeModulesMock = jest.mock('NativeModules', () => ({
-  ParseModule: {
-    updateParseInstallation: jest.fn(),
-    unSubscribeAllParseChannels: jest.fn()
-  }
-}));
+const NativeModulesMock = jest.mock('NativeModules', () => ({}));
 global.NativeModules = NativeModulesMock;
 
-const NativeEventEmitterMock = jest.mock('NativeEventEmitter', () => class MockNativeEventEmitter {
-  addListener = () => jest.fn();
-  removeListener = () => jest.fn();
-  removeAllListeners = () => jest.fn();
-  });
+const NativeEventEmitterMock = jest.mock(
+  'NativeEventEmitter',
+  () => class MockNativeEventEmitter {}
+);
 
 global.NativeEventEmitter = NativeEventEmitterMock;

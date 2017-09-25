@@ -3,10 +3,10 @@ import { AsyncStorage } from 'react-native';
 import { persistStore } from 'redux-persist';
 
 const STORE_CONFIG = {
-  version: '7pupu',
+  version: '123',
   config: {
     storage: AsyncStorage,
-    whitelist: ['auth', 'form', 'branches', 'printer']
+    whitelist: ['auth', 'form']
   }
 };
 

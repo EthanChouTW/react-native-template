@@ -3,9 +3,9 @@ import {
 } from 'react-native';
 import SlideMenuScreen from '../components/SlideMenuScreen';
 import HomeScreen from '../components/home/HomeScreen';
-import BodyScreen from '../components/inventoryManagement/BodyScreen';
-import HealthScreen from '../components/HealthScreen';
-import PhysicalInfoScreen from '../components/PhysicalInfoScreen';
+import Page4Screen from '../components/Page4/Page4Screen';
+import Page3Screen from '../components/Page3Screen';
+import Page2Screen from '../components/Page2Screen';
 import Logout from '../components/Logout';
 import Theme from '../utils/styleCollection';
 
@@ -13,9 +13,9 @@ const { height, width } = Dimensions.get('window');
 
 export const routeKeys = {
   Home: 'Home',
-  HealthScreen: 'HealthScreen',
-  BodyScreen: 'BodyScreen',
-  PhysicalInfoScreen: 'PhysicalInfoScreen'
+  Page3Screen: 'Page3Screen',
+  Page4Screen: 'Page4Screen',
+  Page2Screen: 'Page2Screen'
 };
 
 export const drawerConfig = {
@@ -37,13 +37,13 @@ export const drawerRoutes = {
   [`${routeKeys.Home}`]: {
     screen: HomeScreen
   },
-  [`${routeKeys.PhysicalInfoScreen}`]: {
-    screen: PhysicalInfoScreen
+  [`${routeKeys.Page2Screen}`]: {
+    screen: Page2Screen
   },
-  [`${routeKeys.HealthScreen}`]: {
-    screen: HealthScreen
+  [`${routeKeys.Page3Screen}`]: {
+    screen: Page3Screen
   },
-  [`${routeKeys.BodyScreen}`]: {
-    screen: BodyScreen
+  [`${routeKeys.Page4Screen}`]: {
+    screen: Page4Screen
   }
 };

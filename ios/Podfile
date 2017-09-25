@@ -1,28 +1,28 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'NDCHealth' do
+target 'TaxiDriver' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for NDCHealth
+  # Pods for TaxiDriver
   pod 'Parse'
   pod 'Fabric'
   pod 'Crashlytics'
-  target 'NDCHealthTests' do
+  target 'TaxiDriverTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
 end
 
-target 'NDCHealth-tvOS' do
+target 'TaxiDriver-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for NDCHealth-tvOS
+  # Pods for TaxiDriver-tvOS
 
-  target 'NDCHealth-tvOSTests' do
+  target 'TaxiDriver-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

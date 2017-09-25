@@ -82,7 +82,7 @@ const renderEmail = (field) => (
   <View style={styles.emailfield}>
     <TextInput
       {...field.input}
-      placeholder={Locales.t('lbl_username')}
+      placeholder={'username'}
       autoCapitalize="none"
       autoCorrect={false}
       keyboardType="email-address"
@@ -95,7 +95,7 @@ const renderPassword = (field) => (
   <View style={styles.passwordfield}>
     <TextInput
       {...field.input}
-      placeholder={Locales.t('lbl_password')}
+      placeholder={'password'}
       secureTextEntry
       style={styles.textInput}
     />
@@ -126,10 +126,10 @@ export default class Login extends Component {
     };
 
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: 'gray' }}>
         <ImageBackground
             /* eslint-disable global-require */
-          source={require('../../assets/image/photo_bg.jpg')}
+          /* source={require('../../assets/image/photo_bg.jpg')} */
           imageStyle={styles.backgroundImage}
         >
           <View style={styles.inputContainer}>
@@ -145,7 +145,7 @@ export default class Login extends Component {
             />
             <View style={styles.buttonContainer}>
               <TouchableOpacity onPress={submitting ? null : handleSubmit(onSignIn)}>
-                <Text style={styles.button}>{Locales.t('lbl_login')}</Text>
+                <Text style={styles.button}>{'Login'}</Text>
               </TouchableOpacity>
             </View>
           </View>

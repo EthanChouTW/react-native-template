@@ -1,13 +1,7 @@
 import * as Keychain from 'react-native-keychain';
 import { NavigationActions } from 'react-navigation';
-import { loginUserApi, logoutUserApi } from '../api';
+// import { loginUserApi, logoutUserApi } from '../api';
 import { UNAUTH_USER, AUTH_USER, ADD_ALERT, REMOVE_ALL_ALERT } from './actionTypes';
-import { clearStore } from './storeActions';
-import { clearBranch } from './branchesActions';
-import { clearPrinter } from './printerActions';
-import {
-  setupFirebase, unlistenAllfulfillments
-} from './fulfillmentsActions';
 import Locales from '../locales';
 
 const authUser = (beeId, accessToken, firebaseEndpoint, firebaseCustomToken, user) => ({
@@ -76,18 +70,14 @@ export const loginUser = (email, password, platform) => async (dispatch) => {
 
 export const handleExpiredUser = () => async (dispatch) => {
   dispatch(unAuthUser());
-  dispatch(clearStore());
-  dispatch(clearBranch());
-  dispatch(clearPrinter());
+
 };
 
 export const logoutUser = (accessToken) => async (dispatch) => {
   dispatch(unAuthUser());
-  dispatch(clearStore());
-  dispatch(clearBranch());
-  dispatch(clearPrinter());
+
 };
 
-export const startFirebase = () => async (dispatch) => {
-  await dispatch(setupFirebase());
-};
+// export const startFirebase = () => async (dispatch) => {
+//   await dispatch(setupFirebase());
+// };

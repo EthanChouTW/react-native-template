@@ -10,7 +10,7 @@ import { AppRegistry } from 'react-native';
 import App from './app/components/App';
 import { configureStore } from './app/store';
 
-export default class NDCHealth extends Component {
+export default class TaxiDriver extends Component {
   render() {
     return (
       <Provider store={configureStore()}>
@@ -20,4 +20,4 @@ export default class NDCHealth extends Component {
   }
 }
 
-AppRegistry.registerComponent('NDCHealth', () => NDCHealth);
+AppRegistry.registerComponent('TaxiDriver', () => TaxiDriver);

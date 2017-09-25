@@ -70,4 +70,4 @@
 -dontwarn okio.**
 
 # react native config
--keep class com.honestbee.merchant.BuildConfig { *; }
+-keep class com.VCE.BuildConfig { *; }

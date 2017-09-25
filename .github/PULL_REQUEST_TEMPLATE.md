@@ -1,4 +1,3 @@
-https://honestbee.atlassian.net/browse/RM-
 
 ## WIP Checklist
 

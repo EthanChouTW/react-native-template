@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ndchealth"
+    package="com.taxidriver"
     android:versionCode="900"
     android:versionName="0.9.0">
 

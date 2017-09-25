@@ -1,6 +1,0 @@
-framework module PrinterLibs {
-  umbrella header "PrinterLibs.h"
-
-  export *
-  module * { export * }
-}
