@@ -66,8 +66,6 @@ export default class PhysicalInfoScreen extends Component {
         >
         
         </NavigationBar>
-
-        
       </View>
     );
   }

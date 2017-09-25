@@ -266,6 +266,7 @@ RCT_EXPORT_METHOD(handleDisconnect)
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
   NSLog(@"didUpdateValueForCharacteristic!");
+  RCTLogInfo(@"did update %@", characteristic.UUID);
   [self handleReceivedPacket: characteristic.value];
 }
 
@@ -300,13 +301,12 @@ RCT_EXPORT_METHOD(handleDisconnect)
 -(void) handleType2:(NSData *) data{
   if(hr_or_step == 0) {
     NSDictionary * dict = [BFS handlePacketHR:data];
+//    NSDictionary * dict = [self getHeartBPMData:data];
     if([[dict objectForKey:@"status"] isEqualToString:@"success"]) {
       _hrDict = dict;
       NSLog(@"%@", dict);
       RCTLogInfo(@"%@", dict);
-      _lbl_data.text = [NSString stringWithFormat:@"最小: %@bpm, 最大: %@bpm, 平均: %@bpm", [[dict objectForKey:@"data"] objectForKey:@"HR_min"]
-                        , [[dict objectForKey:@"data"] objectForKey:@"HR_max"]
-                        , [[dict objectForKey:@"data"] objectForKey:@"HR_avg"]];
+
     } else if([[dict objectForKey:@"status"] isEqualToString:@"nodata"]) {
       _lbl_status.text = @"沒有資料";
     } else {
@@ -346,6 +346,19 @@ RCT_EXPORT_METHOD(handleDisconnect)
   }
 }
 
-
+//- (NSDictionary *)getHeartBPMData:(NSData *)data
+//{
+//  const uint8_t *reportData = [data bytes];
+//  uint16_t bpm = 0;
+//
+//  if ((reportData[0] & 0x01) == 0) {
+//    bpm = reportData[1];
+//  }
+//  else {
+//    bpm = CFSwapInt16LittleToHost(*(uint16_t *)(&reportData[1]));
+//  }
+//
+//  return @{ @"status": @"success", @"data" : @{ @"bpm": @(bpm)}};
+//}
 
 @end
