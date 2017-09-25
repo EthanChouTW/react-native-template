@@ -34,9 +34,6 @@ import io.fabric.sdk.android.Fabric;
 
 public class MainApplication extends Application implements ReactApplication {
 
-    private static final String USER_ID = "{UserId}";
-    private static final String PARSE_CHANNEL = "s3cr3t-users-" + USER_ID;
-
     private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
 
         @Override
@@ -77,65 +74,7 @@ public class MainApplication extends Application implements ReactApplication {
         BugsnagReactNative.start(this);
         SoLoader.init(this, /* native exopackage */ false);
 
-        Fabric.with(this, new Crashlytics());
-        initParse(this);
+        // Fabric.with(this, new Crashlytics());
     }
 
-    private void initParse(Context context) {
-        Parse.setLogLevel(Parse.LOG_LEVEL_VERBOSE);
-        Parse.initialize(new Parse.Configuration.Builder(context)
-                .applicationId(getString(R.string.parse_app_id))
-                .clientKey(getString(R.string.parse_client_key))
-                .server(getString(R.string.parse_end_point))
-                .build());
-        updateParseInstallationData(getUserId(context));
-    }
-
-    public static void updateParseInstallationData(String userId) {
-        final ParseInstallation install = ParseInstallation.getCurrentInstallation();
-        install.put("app_type", Collections.singletonList("bee"));
-        install.put("receiving", Collections.singletonList(true));
-        install.saveInBackground();
-
-        install.fetchInBackground(new GetCallback<ParseObject>() {
-            @Override
-            public void done(ParseObject parseObject, ParseException e) {
-            }
-        });
-
-        if (!TextUtils.isEmpty(userId)) {
-            registerParseChannel(userId);
-        }
-    }
-
-    public static String getUserId(Context context) {
-        return SharedPreferencesModule.getUserId(context);
-    }
-
-    private static void registerParseChannel(String userId) {
-        if (TextUtils.isEmpty(userId)) {
-            return;
-        }
-
-        final String channel = getPushNotificationsChannel(userId);
-        ParsePush.subscribeInBackground(channel, new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
-                Log.d("TAG", "push received from channel: " + channel);
-            }
-        });
-    }
-
-    public static void unSubscribeAllParseChannels() {
-        List<String> subscribedChannels = ParseInstallation.getCurrentInstallation().getList("channels");
-        if (subscribedChannels != null) {
-            for (String channel : subscribedChannels) {
-                ParsePush.unsubscribeInBackground(channel);
-            }
-        }
-    }
-
-    public static String getPushNotificationsChannel(String userId) {
-        return PARSE_CHANNEL.replace(USER_ID, userId);
-    }
 }
